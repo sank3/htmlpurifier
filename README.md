@@ -1,4 +1,10 @@
-HTML Purifier [![Build Status](https://secure.travis-ci.org/ezyang/htmlpurifier.svg?branch=master)](http://travis-ci.org/ezyang/htmlpurifier)
+Forked From https://github.com/ezyang/htmlpurifier
+
+Improvements-
+ * HTML5 new element support - nav, section, video
+ * Attributes added - Input placeholder
+
+HTML Purifier [![Build Status](https://secure.travis-ci.org/sank3/htmlpurifier.svg?branch=master)](http://travis-ci.org/sank3/htmlpurifier)
 =============
 
 HTML Purifier is an HTML filtering solution that uses a unique combination
@@ -26,4 +32,4 @@ Package available on [Composer](https://packagist.org/packages/ezyang/htmlpurifi
 
 If you're using Composer to manage dependencies, you can use
 
-    $ composer require ezyang/htmlpurifier
+    $ composer require sank3/htmlpurifier
