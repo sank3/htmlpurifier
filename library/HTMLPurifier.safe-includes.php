@@ -175,6 +175,7 @@ require_once $__dir . '/HTMLPurifier/HTMLModule/TargetNoopener.php';
 require_once $__dir . '/HTMLPurifier/HTMLModule/TargetNoreferrer.php';
 require_once $__dir . '/HTMLPurifier/HTMLModule/Text.php';
 require_once $__dir . '/HTMLPurifier/HTMLModule/Tidy.php';
+require_once $__dir . '/HTMLPurifier/HTMLModule/Video.php';
 require_once $__dir . '/HTMLPurifier/HTMLModule/XMLCommonAttributes.php';
 require_once $__dir . '/HTMLPurifier/HTMLModule/Tidy/Name.php';
 require_once $__dir . '/HTMLPurifier/HTMLModule/Tidy/Proprietary.php';

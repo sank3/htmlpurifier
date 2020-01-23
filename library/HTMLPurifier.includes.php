@@ -7,7 +7,7 @@
  * primary concern and you are using an opcode cache. PLEASE DO NOT EDIT THIS
  * FILE, changes will be overwritten the next time the script is run.
  *
- * @version 4.12.0
+ * @version 4.12.1
  *
  * @warning
  *      You must *not* include any other HTML Purifier files before this file,
@@ -181,6 +181,7 @@ require 'HTMLPurifier/HTMLModule/TargetNoopener.php';
 require 'HTMLPurifier/HTMLModule/TargetNoreferrer.php';
 require 'HTMLPurifier/HTMLModule/Text.php';
 require 'HTMLPurifier/HTMLModule/Tidy.php';
+require 'HTMLPurifier/HTMLModule/Video.php';
 require 'HTMLPurifier/HTMLModule/XMLCommonAttributes.php';
 require 'HTMLPurifier/HTMLModule/Tidy/Name.php';
 require 'HTMLPurifier/HTMLModule/Tidy/Proprietary.php';

@@ -81,6 +81,8 @@ class HTMLPurifier_HTMLModule_Text extends HTMLPurifier_HTMLModule
         );
 
         $this->addElement('div', 'Block', 'Flow', 'Common');
+        $this->addElement('section', 'Block', 'Flow', 'Common');
+        $this->addElement('nav', 'Block', 'Flow', 'Common');
     }
 }
 

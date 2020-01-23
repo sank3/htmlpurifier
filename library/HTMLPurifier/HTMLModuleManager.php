@@ -81,7 +81,7 @@ class HTMLPurifier_HTMLModuleManager
         $common = array(
             'CommonAttributes', 'Text', 'Hypertext', 'List',
             'Presentation', 'Edit', 'Bdo', 'Tables', 'Image',
-            'StyleAttribute',
+            'StyleAttribute', 'Video',
             // Unsafe:
             'Scripting', 'Object', 'Forms',
             // Sorta legacy, but present in strict:
