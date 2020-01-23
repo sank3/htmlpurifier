@@ -36,7 +36,7 @@ class HTMLPurifier_HTMLModule_Forms extends HTMLPurifier_HTMLModule
             array(
                 'accept' => 'ContentTypes',
                 'accept-charset' => 'Charsets',
-                'action*' => 'URI',
+                'action' => 'URI',
                 'method' => 'Enum#get,post',
                 // really ContentType, but these two are the only ones used today
                 'enctype' => 'Enum#application/x-www-form-urlencoded,multipart/form-data',
