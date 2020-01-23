@@ -57,6 +57,7 @@ class HTMLPurifier_HTMLModule_Forms extends HTMLPurifier_HTMLModule
                 'disabled' => 'Bool#disabled',
                 'maxlength' => 'Number',
                 'name' => 'CDATA',
+                'placeholder' => 'Text',
                 'readonly' => 'Bool#readonly',
                 'size' => 'Number',
                 'src' => 'URI#embedded',
