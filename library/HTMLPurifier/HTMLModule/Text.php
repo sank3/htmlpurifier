@@ -77,10 +77,12 @@ class HTMLPurifier_HTMLModule_Text extends HTMLPurifier_HTMLModule
         // Block Structural -----------------------------------------------
         $p = $this->addElement('p', 'Block', 'Inline', 'Common');
         $p->autoclose = array_flip(
-            array("address", "blockquote", "center", "dir", "div", "dl", "fieldset", "ol", "p", "ul")
+            array("address", "blockquote", "center", "dir", "div", "dl", "fieldset", "ol", "p", "ul", "section", "nav")
         );
 
         $this->addElement('div', 'Block', 'Flow', 'Common');
+
+        //HTML5 elements
         $this->addElement('section', 'Block', 'Flow', 'Common');
         $this->addElement('nav', 'Block', 'Flow', 'Common');
     }
