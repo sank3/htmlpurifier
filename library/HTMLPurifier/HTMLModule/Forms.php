@@ -59,6 +59,7 @@ class HTMLPurifier_HTMLModule_Forms extends HTMLPurifier_HTMLModule
                 'name' => 'CDATA',
                 'placeholder' => 'Text',
                 'readonly' => 'Bool#readonly',
+                'required' => 'Bool#required',
                 'size' => 'Number',
                 'src' => 'URI#embedded',
                 'tabindex' => 'Number',
@@ -105,11 +106,12 @@ class HTMLPurifier_HTMLModule_Forms extends HTMLPurifier_HTMLModule
             'Common',
             array(
                 'accesskey' => 'Character',
-                'cols*' => 'Number',
+                'cols' => 'Number',
                 'disabled' => 'Bool#disabled',
                 'name' => 'CDATA',
+                'placeholder' => 'Text',
                 'readonly' => 'Bool#readonly',
-                'rows*' => 'Number',
+                'rows' => 'Number',
                 'tabindex' => 'Number',
             )
         );

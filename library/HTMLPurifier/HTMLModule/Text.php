@@ -85,6 +85,19 @@ class HTMLPurifier_HTMLModule_Text extends HTMLPurifier_HTMLModule
         //HTML5 elements
         $this->addElement('section', 'Block', 'Flow', 'Common');
         $this->addElement('nav', 'Block', 'Flow', 'Common');
+        $this->addElement('article', 'Block', 'Flow', 'Common');
+        $this->addElement('aside',   'Block', 'Flow', 'Common');
+        $this->addElement('header',  'Block', 'Flow', 'Common');
+        $this->addElement('footer',  'Block', 'Flow', 'Common');
+        $this->addElement('address', 'Block', 'Flow', 'Common');
+        $this->addElement('hgroup', 'Block', 'Required: h1 | h2 | h3 | h4 | h5 | h6', 'Common');
+
+        $this->addElement('s',    'Inline', 'Inline', 'Common');
+        $this->addElement('var',  'Inline', 'Inline', 'Common');
+        $this->addElement('sub',  'Inline', 'Inline', 'Common');
+        $this->addElement('sup',  'Inline', 'Inline', 'Common');
+        $this->addElement('mark', 'Inline', 'Inline', 'Common');
+        $this->addElement('wbr',  'Inline', 'Empty', 'Core');
     }
 }
 

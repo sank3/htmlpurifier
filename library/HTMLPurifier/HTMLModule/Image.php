@@ -43,6 +43,9 @@ class HTMLPurifier_HTMLModule_Image extends HTMLPurifier_HTMLModule
         $img->attr_transform_pre[] =
         $img->attr_transform_post[] =
             new HTMLPurifier_AttrTransform_ImgRequired();
+
+        $this->addElement('figure', 'Block', 'Optional: (figcaption, Flow) | (Flow, figcaption) | Flow', 'Common');
+        $this->addElement('figcaption', 'Inline', 'Flow', 'Common');
     }
 }
 

@@ -1,8 +1,9 @@
 Forked From https://github.com/ezyang/htmlpurifier
 
 Improvements-
- * HTML5 new element support - nav, section, video
- * Attributes added - Input placeholder
+ * HTML5 new element support - nav, section, article, aside, header, footer, address, hgroup
+ * Images/Media embeds - video, figure, figcaption
+ * Form Attributes added - Input placeholder, required
 
 HTML Purifier [![Build Status](https://secure.travis-ci.org/sank3/htmlpurifier.svg?branch=master)](http://travis-ci.org/sank3/htmlpurifier)
 =============
