@@ -9,6 +9,10 @@ NEWS ( CHANGELOG and HISTORY )                                     HTMLPurifier
     . Internal change
 ==========================
 
+4.13.0, released 2020-01-27
+! Added support for aside, header, footer, address, hgroup, figure, figcaption
+! required attribute for input form elment
+
 4.12.0, released 2019-10-27
 ! PHP 7.4 is supported, thank you Witold Wasiczko, Mateuz Turcza and
   Edi Modrić
