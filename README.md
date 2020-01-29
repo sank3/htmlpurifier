@@ -3,7 +3,8 @@ Forked From https://github.com/ezyang/htmlpurifier
 Improvements-
  * HTML5 new element support - nav, section, article, aside, header, footer, address, hgroup
  * Images/Media embeds - video, figure, figcaption
- * Form Attributes added - Input placeholder, required
+ * Form Attributes added - placeholder, required
+ * HTML5 Data attributes - will not be removed and parsed as it is. Supported only if HTML.Trusted is set
 
 HTML Purifier [![Build Status](https://secure.travis-ci.org/sank3/htmlpurifier.svg?branch=master)](http://travis-ci.org/sank3/htmlpurifier)
 =============
@@ -29,7 +30,7 @@ HTML Purifier can be found on the web at: [http://htmlpurifier.org/](http://html
 
 ## Installation
 
-Package available on [Composer](https://packagist.org/packages/ezyang/htmlpurifier).
+Package available on [Composer](https://packagist.org/packages/sank3/htmlpurifier).
 
 If you're using Composer to manage dependencies, you can use
 

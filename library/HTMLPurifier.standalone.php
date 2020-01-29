@@ -7,7 +7,7 @@
  * primary concern and you are using an opcode cache. PLEASE DO NOT EDIT THIS
  * FILE, changes will be overwritten the next time the script is run.
  *
- * @version 4.13.0
+ * @version 4.14.0
  *
  * @warning
  *      You must *not* include any other HTML Purifier files before this file,
@@ -39,7 +39,7 @@
  */
 
 /*
-    HTML Purifier 4.13.0 - Standards Compliant HTML Filtering
+    HTML Purifier 4.14.0 - Standards Compliant HTML Filtering
     Copyright (C) 2006-2008 Edward Z. Yang
 
     This library is free software; you can redistribute it and/or
@@ -78,12 +78,12 @@ class HTMLPurifier
      * Version of HTML Purifier.
      * @type string
      */
-    public $version = '4.13.0';
+    public $version = '4.14.0';
 
     /**
      * Constant with version of HTML Purifier.
      */
-    const VERSION = '4.13.0';
+    const VERSION = '4.14.0';
 
     /**
      * Global configuration object.
@@ -917,12 +917,19 @@ class HTMLPurifier_AttrValidator
         $attr_key = false;
         $context->register('CurrentAttr', $attr_key);
 
+        $isTrusted = $config->get('HTML.Trusted');
+
         // iterate through all the attribute keypairs
         // Watch out for name collisions: $key has previously been used
         foreach ($attr as $attr_key => $value) {
 
-            // call the definition
-            if (isset($defs[$attr_key])) {
+            if($isTrusted && strpos($attr_key,'data')===0){
+                //if HTML is from trusted source, allow data attributes
+                //they can hold simple text, numbers, url base64 data or anything. Its unpredictable
+                //TO-DO should be improved further
+                $result = htmlentities($value);
+            }else if (isset($defs[$attr_key])) {
+                // call the definition
                 // there is a local definition defined
                 if ($defs[$attr_key] === false) {
                     // We've explicitly been told not to allow this element.
@@ -1810,7 +1817,7 @@ class HTMLPurifier_Config
      * HTML Purifier's version
      * @type string
      */
-    public $version = '4.13.0';
+    public $version = '4.14.0';
 
     /**
      * Whether or not to automatically finalize

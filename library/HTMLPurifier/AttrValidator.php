@@ -76,12 +76,19 @@ class HTMLPurifier_AttrValidator
         $attr_key = false;
         $context->register('CurrentAttr', $attr_key);
 
+        $isTrusted = $config->get('HTML.Trusted');
+
         // iterate through all the attribute keypairs
         // Watch out for name collisions: $key has previously been used
         foreach ($attr as $attr_key => $value) {
 
-            // call the definition
-            if (isset($defs[$attr_key])) {
+            if($isTrusted && strpos($attr_key,'data')===0){
+                //if HTML is from trusted source, allow data attributes
+                //they can hold simple text, numbers, url base64 data or anything. Its unpredictable
+                //TO-DO should be improved further
+                $result = htmlentities($value);
+            }else if (isset($defs[$attr_key])) {
+                // call the definition
                 // there is a local definition defined
                 if ($defs[$attr_key] === false) {
                     // We've explicitly been told not to allow this element.

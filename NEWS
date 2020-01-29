@@ -9,6 +9,9 @@ NEWS ( CHANGELOG and HISTORY )                                     HTMLPurifier
     . Internal change
 ==========================
 
+4.14.0, released 2020-01-29
+! Allowed data attribute for HTML elements if HTML.Trusted is set to true
+
 4.13.0, released 2020-01-27
 ! Added support for aside, header, footer, address, hgroup, figure, figcaption
 ! required attribute for input form elment

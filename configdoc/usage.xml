@@ -17,6 +17,27 @@
    <line>57</line>
   </file>
  </directive>
+ <directive id="HTML.Trusted">
+  <file name="HTMLPurifier/AttrValidator.php">
+   <line>79</line>
+  </file>
+  <file name="HTMLPurifier/HTMLModuleManager.php">
+   <line>234</line>
+  </file>
+  <file name="HTMLPurifier/Lexer.php">
+   <line>313</line>
+   <line>353</line>
+  </file>
+  <file name="HTMLPurifier/HTMLModule/Image.php">
+   <line>37</line>
+  </file>
+  <file name="HTMLPurifier/Lexer/DirectLex.php">
+   <line>47</line>
+  </file>
+  <file name="HTMLPurifier/Strategy/RemoveForeignElements.php">
+   <line>30</line>
+  </file>
+ </directive>
  <directive id="CSS.MaxImgLength">
   <file name="HTMLPurifier/CSSDefinition.php">
    <line>240</line>
@@ -165,24 +186,6 @@
  <directive id="HTML.ForbiddenAttributes">
   <file name="HTMLPurifier/HTMLDefinition.php">
    <line>400</line>
-  </file>
- </directive>
- <directive id="HTML.Trusted">
-  <file name="HTMLPurifier/HTMLModuleManager.php">
-   <line>234</line>
-  </file>
-  <file name="HTMLPurifier/Lexer.php">
-   <line>313</line>
-   <line>353</line>
-  </file>
-  <file name="HTMLPurifier/HTMLModule/Image.php">
-   <line>37</line>
-  </file>
-  <file name="HTMLPurifier/Lexer/DirectLex.php">
-   <line>47</line>
-  </file>
-  <file name="HTMLPurifier/Strategy/RemoveForeignElements.php">
-   <line>30</line>
   </file>
  </directive>
  <directive id="HTML.AllowedModules">
