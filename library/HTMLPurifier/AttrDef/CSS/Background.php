@@ -22,6 +22,7 @@ class HTMLPurifier_AttrDef_CSS_Background extends HTMLPurifier_AttrDef
         $def = $config->getCSSDefinition();
         $this->info['background-color'] = $def->info['background-color'];
         $this->info['background-image'] = $def->info['background-image'];
+        $this->info['background-size'] = $def->info['background-size'];
         $this->info['background-repeat'] = $def->info['background-repeat'];
         $this->info['background-attachment'] = $def->info['background-attachment'];
         $this->info['background-position'] = $def->info['background-position'];

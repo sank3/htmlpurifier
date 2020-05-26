@@ -7,7 +7,7 @@
  * primary concern and you are using an opcode cache. PLEASE DO NOT EDIT THIS
  * FILE, changes will be overwritten the next time the script is run.
  *
- * @version 4.14.0
+ * @version 4.15.0
  *
  * @warning
  *      You must *not* include any other HTML Purifier files before this file,
@@ -39,7 +39,7 @@
  */
 
 /*
-    HTML Purifier 4.14.0 - Standards Compliant HTML Filtering
+    HTML Purifier 4.15.0 - Standards Compliant HTML Filtering
     Copyright (C) 2006-2008 Edward Z. Yang
 
     This library is free software; you can redistribute it and/or
@@ -78,12 +78,12 @@ class HTMLPurifier
      * Version of HTML Purifier.
      * @type string
      */
-    public $version = '4.14.0';
+    public $version = '4.15.0';
 
     /**
      * Constant with version of HTML Purifier.
      */
-    const VERSION = '4.14.0';
+    const VERSION = '4.15.0';
 
     /**
      * Global configuration object.
@@ -1313,6 +1313,9 @@ class HTMLPurifier_CSSDefinition extends HTMLPurifier_Definition
         $this->info['background-repeat'] = new HTMLPurifier_AttrDef_Enum(
             array('repeat', 'repeat-x', 'repeat-y', 'no-repeat')
         );
+        $this->info['background-size'] = new HTMLPurifier_AttrDef_Enum(
+            array('auto', 'contain', 'cover')
+        );
         $this->info['background-attachment'] = new HTMLPurifier_AttrDef_Enum(
             array('scroll', 'fixed')
         );
@@ -1817,7 +1820,7 @@ class HTMLPurifier_Config
      * HTML Purifier's version
      * @type string
      */
-    public $version = '4.14.0';
+    public $version = '4.15.0';
 
     /**
      * Whether or not to automatically finalize
@@ -11077,6 +11080,7 @@ class HTMLPurifier_AttrDef_CSS_Background extends HTMLPurifier_AttrDef
         $def = $config->getCSSDefinition();
         $this->info['background-color'] = $def->info['background-color'];
         $this->info['background-image'] = $def->info['background-image'];
+        $this->info['background-size'] = $def->info['background-size'];
         $this->info['background-repeat'] = $def->info['background-repeat'];
         $this->info['background-attachment'] = $def->info['background-attachment'];
         $this->info['background-position'] = $def->info['background-position'];

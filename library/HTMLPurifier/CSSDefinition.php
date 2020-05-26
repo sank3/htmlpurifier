@@ -104,6 +104,9 @@ class HTMLPurifier_CSSDefinition extends HTMLPurifier_Definition
         $this->info['background-repeat'] = new HTMLPurifier_AttrDef_Enum(
             array('repeat', 'repeat-x', 'repeat-y', 'no-repeat')
         );
+        $this->info['background-size'] = new HTMLPurifier_AttrDef_Enum(
+            array('auto', 'contain', 'cover')
+        );
         $this->info['background-attachment'] = new HTMLPurifier_AttrDef_Enum(
             array('scroll', 'fixed')
         );

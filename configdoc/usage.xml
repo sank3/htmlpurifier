@@ -40,37 +40,37 @@
  </directive>
  <directive id="CSS.MaxImgLength">
   <file name="HTMLPurifier/CSSDefinition.php">
-   <line>240</line>
+   <line>243</line>
   </file>
  </directive>
  <directive id="CSS.Proprietary">
   <file name="HTMLPurifier/CSSDefinition.php">
-   <line>365</line>
+   <line>368</line>
   </file>
  </directive>
  <directive id="CSS.AllowTricky">
   <file name="HTMLPurifier/CSSDefinition.php">
-   <line>369</line>
+   <line>372</line>
   </file>
  </directive>
  <directive id="CSS.Trusted">
   <file name="HTMLPurifier/CSSDefinition.php">
-   <line>373</line>
+   <line>376</line>
   </file>
  </directive>
  <directive id="CSS.AllowImportant">
   <file name="HTMLPurifier/CSSDefinition.php">
-   <line>377</line>
+   <line>380</line>
   </file>
  </directive>
  <directive id="CSS.AllowedProperties">
   <file name="HTMLPurifier/CSSDefinition.php">
-   <line>506</line>
+   <line>509</line>
   </file>
  </directive>
  <directive id="CSS.ForbiddenProperties">
   <file name="HTMLPurifier/CSSDefinition.php">
-   <line>522</line>
+   <line>525</line>
   </file>
  </directive>
  <directive id="Cache.DefinitionImpl">
