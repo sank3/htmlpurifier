@@ -4,6 +4,7 @@ Improvements-
  * HTML5 new element support - nav, section, article, aside, header, footer, address, hgroup
  * Images/Media embeds - video, figure, figcaption
  * Form Attributes added - placeholder, required
+ * Input type enum extended to - button, checkbox, color, date, datetime-local, email, file, hidden, image, month, number, password, radio, range, reset, search, submit, tel, text, time, url, week
  * HTML5 Data attributes - will not be removed and parsed as it is. Supported only if HTML.Trusted is set
 
 HTML Purifier [![Build Status](https://secure.travis-ci.org/sank3/htmlpurifier.svg?branch=master)](http://travis-ci.org/sank3/htmlpurifier)

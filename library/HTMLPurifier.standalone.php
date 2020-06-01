@@ -7,7 +7,7 @@
  * primary concern and you are using an opcode cache. PLEASE DO NOT EDIT THIS
  * FILE, changes will be overwritten the next time the script is run.
  *
- * @version 4.15.0
+ * @version 4.16.0
  *
  * @warning
  *      You must *not* include any other HTML Purifier files before this file,
@@ -39,7 +39,7 @@
  */
 
 /*
-    HTML Purifier 4.15.0 - Standards Compliant HTML Filtering
+    HTML Purifier 4.16.0 - Standards Compliant HTML Filtering
     Copyright (C) 2006-2008 Edward Z. Yang
 
     This library is free software; you can redistribute it and/or
@@ -78,12 +78,12 @@ class HTMLPurifier
      * Version of HTML Purifier.
      * @type string
      */
-    public $version = '4.15.0';
+    public $version = '4.16.0';
 
     /**
      * Constant with version of HTML Purifier.
      */
-    const VERSION = '4.15.0';
+    const VERSION = '4.16.0';
 
     /**
      * Global configuration object.
@@ -1820,7 +1820,7 @@ class HTMLPurifier_Config
      * HTML Purifier's version
      * @type string
      */
-    public $version = '4.15.0';
+    public $version = '4.16.0';
 
     /**
      * Whether or not to automatically finalize
@@ -16202,7 +16202,7 @@ class HTMLPurifier_HTMLModule_Forms extends HTMLPurifier_HTMLModule
                 'size' => 'Number',
                 'src' => 'URI#embedded',
                 'tabindex' => 'Number',
-                'type' => 'Enum#text,password,checkbox,button,radio,submit,reset,file,hidden,image',
+                'type' => 'Enum#button,checkbox,color,date,datetime-local,email,file,hidden,image,month,number,password,radio,range,reset,search,submit,tel,text,time,url,week',
                 'value' => 'CDATA',
             )
         );

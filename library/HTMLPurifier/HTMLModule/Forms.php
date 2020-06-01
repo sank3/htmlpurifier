@@ -63,7 +63,7 @@ class HTMLPurifier_HTMLModule_Forms extends HTMLPurifier_HTMLModule
                 'size' => 'Number',
                 'src' => 'URI#embedded',
                 'tabindex' => 'Number',
-                'type' => 'Enum#text,password,checkbox,button,radio,submit,reset,file,hidden,image',
+                'type' => 'Enum#button,checkbox,color,date,datetime-local,email,file,hidden,image,month,number,password,radio,range,reset,search,submit,tel,text,time,url,week',
                 'value' => 'CDATA',
             )
         );
