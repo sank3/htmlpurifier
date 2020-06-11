@@ -9,8 +9,11 @@ NEWS ( CHANGELOG and HISTORY )                                     HTMLPurifier
     . Internal change
 ==========================
 
+4.17.0, released 2020-06-11
+! Allowed 'fit-content' for width
+
 4.16.0, released 2020-06-01
-! Extended "type" enum for Input tags to - button, checkbox, color, date, datetime-local, email, file, hidden, image, month, number, password, radio, range, reset, search, submit, tel, text, time, url, week
+! Extended "type" enum for Input tag to - button, checkbox, color, date, datetime-local, email, file, hidden, image, month, number, password, radio, range, reset, search, submit, tel, text, time, url, week
 
 4.15.0, released 2020-05-26
 ! Allow background-size css property

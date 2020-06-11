@@ -7,7 +7,7 @@
  * primary concern and you are using an opcode cache. PLEASE DO NOT EDIT THIS
  * FILE, changes will be overwritten the next time the script is run.
  *
- * @version 4.16.0
+ * @version 4.17.0
  *
  * @warning
  *      You must *not* include any other HTML Purifier files before this file,
@@ -39,7 +39,7 @@
  */
 
 /*
-    HTML Purifier 4.16.0 - Standards Compliant HTML Filtering
+    HTML Purifier 4.17.0 - Standards Compliant HTML Filtering
     Copyright (C) 2006-2008 Edward Z. Yang
 
     This library is free software; you can redistribute it and/or
@@ -78,12 +78,12 @@ class HTMLPurifier
      * Version of HTML Purifier.
      * @type string
      */
-    public $version = '4.16.0';
+    public $version = '4.17.0';
 
     /**
      * Constant with version of HTML Purifier.
      */
-    const VERSION = '4.16.0';
+    const VERSION = '4.17.0';
 
     /**
      * Global configuration object.
@@ -1432,7 +1432,7 @@ class HTMLPurifier_CSSDefinition extends HTMLPurifier_Definition
             array(
                 new HTMLPurifier_AttrDef_CSS_Length('0'),
                 new HTMLPurifier_AttrDef_CSS_Percentage(true),
-                new HTMLPurifier_AttrDef_Enum(array('auto', 'initial', 'inherit'))
+                new HTMLPurifier_AttrDef_Enum(array('auto', 'initial', 'inherit','fit-content'))
             )
         );
         $trusted_min_wh = new HTMLPurifier_AttrDef_CSS_Composite(
@@ -1820,7 +1820,7 @@ class HTMLPurifier_Config
      * HTML Purifier's version
      * @type string
      */
-    public $version = '4.16.0';
+    public $version = '4.17.0';
 
     /**
      * Whether or not to automatically finalize

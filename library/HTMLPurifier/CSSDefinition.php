@@ -223,7 +223,7 @@ class HTMLPurifier_CSSDefinition extends HTMLPurifier_Definition
             array(
                 new HTMLPurifier_AttrDef_CSS_Length('0'),
                 new HTMLPurifier_AttrDef_CSS_Percentage(true),
-                new HTMLPurifier_AttrDef_Enum(array('auto', 'initial', 'inherit'))
+                new HTMLPurifier_AttrDef_Enum(array('auto', 'initial', 'inherit','fit-content'))
             )
         );
         $trusted_min_wh = new HTMLPurifier_AttrDef_CSS_Composite(
