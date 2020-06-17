@@ -9,6 +9,9 @@ NEWS ( CHANGELOG and HISTORY )                                     HTMLPurifier
     . Internal change
 ==========================
 
+4.18.0, released 2020-06-17
+! 'Background-repeat' property value extended to 'space', 'round', 'initial', 'inherit'
+
 4.17.0, released 2020-06-11
 ! Allowed 'fit-content' for width
 

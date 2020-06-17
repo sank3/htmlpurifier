@@ -7,7 +7,7 @@
  * primary concern and you are using an opcode cache. PLEASE DO NOT EDIT THIS
  * FILE, changes will be overwritten the next time the script is run.
  *
- * @version 4.17.0
+ * @version 4.18.0
  *
  * @warning
  *      You must *not* include any other HTML Purifier files before this file,
@@ -39,7 +39,7 @@
  */
 
 /*
-    HTML Purifier 4.17.0 - Standards Compliant HTML Filtering
+    HTML Purifier 4.18.0 - Standards Compliant HTML Filtering
     Copyright (C) 2006-2008 Edward Z. Yang
 
     This library is free software; you can redistribute it and/or
@@ -78,12 +78,12 @@ class HTMLPurifier
      * Version of HTML Purifier.
      * @type string
      */
-    public $version = '4.17.0';
+    public $version = '4.18.0';
 
     /**
      * Constant with version of HTML Purifier.
      */
-    const VERSION = '4.17.0';
+    const VERSION = '4.18.0';
 
     /**
      * Global configuration object.
@@ -1311,7 +1311,7 @@ class HTMLPurifier_CSSDefinition extends HTMLPurifier_Definition
 
         $this->info['background-image'] = $uri_or_none;
         $this->info['background-repeat'] = new HTMLPurifier_AttrDef_Enum(
-            array('repeat', 'repeat-x', 'repeat-y', 'no-repeat')
+            array('repeat', 'repeat-x', 'repeat-y', 'no-repeat', 'space', 'round', 'initial', 'inherit')
         );
         $this->info['background-size'] = new HTMLPurifier_AttrDef_Enum(
             array('auto', 'contain', 'cover')
@@ -1820,7 +1820,7 @@ class HTMLPurifier_Config
      * HTML Purifier's version
      * @type string
      */
-    public $version = '4.17.0';
+    public $version = '4.18.0';
 
     /**
      * Whether or not to automatically finalize

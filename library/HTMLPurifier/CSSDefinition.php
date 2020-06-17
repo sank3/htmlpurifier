@@ -102,7 +102,7 @@ class HTMLPurifier_CSSDefinition extends HTMLPurifier_Definition
 
         $this->info['background-image'] = $uri_or_none;
         $this->info['background-repeat'] = new HTMLPurifier_AttrDef_Enum(
-            array('repeat', 'repeat-x', 'repeat-y', 'no-repeat')
+            array('repeat', 'repeat-x', 'repeat-y', 'no-repeat', 'space', 'round', 'initial', 'inherit')
         );
         $this->info['background-size'] = new HTMLPurifier_AttrDef_Enum(
             array('auto', 'contain', 'cover')
