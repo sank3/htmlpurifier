@@ -474,7 +474,7 @@ class HTMLPurifier_CSSDefinition extends HTMLPurifier_Definition
     protected function doSetupTrusted($config)
     {
         $this->info['position'] = new HTMLPurifier_AttrDef_Enum(
-            array('static', 'relative', 'absolute', 'fixed')
+            array('static', 'relative', 'absolute', 'fixed', 'sticky')
         );
         $this->info['top'] =
         $this->info['left'] =
