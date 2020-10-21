@@ -365,6 +365,11 @@ class HTMLPurifier_CSSDefinition extends HTMLPurifier_Definition
             array('nowrap', 'normal', 'pre', 'pre-wrap', 'pre-line')
         );
 
+        $this->info['word-break'] = new HTMLPurifier_AttrDef_Enum(
+            array('normal', 'break-all', 'keep-all','break-word', 'initial', 'inherit')
+        );
+
+
         if ($config->get('CSS.Proprietary')) {
             $this->doSetupProprietary($config);
         }

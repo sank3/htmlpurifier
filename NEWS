@@ -9,6 +9,9 @@ NEWS ( CHANGELOG and HISTORY )                                     HTMLPurifier
     . Internal change
 ==========================
 
+4.20.0, released 2020-10-21
+! Allow word-break css property with values: normal|break-all|keep-all|break-word|initial|inherit;
+
 4.19.0, released 2020-06-22
 ! Allowed 'sticky' for position
 

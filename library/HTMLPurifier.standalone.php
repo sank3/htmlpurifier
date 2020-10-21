@@ -7,7 +7,7 @@
  * primary concern and you are using an opcode cache. PLEASE DO NOT EDIT THIS
  * FILE, changes will be overwritten the next time the script is run.
  *
- * @version 4.19.0
+ * @version 4.20.0
  *
  * @warning
  *      You must *not* include any other HTML Purifier files before this file,
@@ -39,7 +39,7 @@
  */
 
 /*
-    HTML Purifier 4.19.0 - Standards Compliant HTML Filtering
+    HTML Purifier 4.20.0 - Standards Compliant HTML Filtering
     Copyright (C) 2006-2008 Edward Z. Yang
 
     This library is free software; you can redistribute it and/or
@@ -78,12 +78,12 @@ class HTMLPurifier
      * Version of HTML Purifier.
      * @type string
      */
-    public $version = '4.19.0';
+    public $version = '4.20.0';
 
     /**
      * Constant with version of HTML Purifier.
      */
-    const VERSION = '4.19.0';
+    const VERSION = '4.20.0';
 
     /**
      * Global configuration object.
@@ -1574,6 +1574,11 @@ class HTMLPurifier_CSSDefinition extends HTMLPurifier_Definition
             array('nowrap', 'normal', 'pre', 'pre-wrap', 'pre-line')
         );
 
+        $this->info['word-break'] = new HTMLPurifier_AttrDef_Enum(
+            array('normal', 'break-all', 'keep-all','break-word', 'initial', 'inherit')
+        );
+
+
         if ($config->get('CSS.Proprietary')) {
             $this->doSetupProprietary($config);
         }
@@ -1820,7 +1825,7 @@ class HTMLPurifier_Config
      * HTML Purifier's version
      * @type string
      */
-    public $version = '4.19.0';
+    public $version = '4.20.0';
 
     /**
      * Whether or not to automatically finalize

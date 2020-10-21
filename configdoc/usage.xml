@@ -45,32 +45,32 @@
  </directive>
  <directive id="CSS.Proprietary">
   <file name="HTMLPurifier/CSSDefinition.php">
-   <line>368</line>
+   <line>373</line>
   </file>
  </directive>
  <directive id="CSS.AllowTricky">
   <file name="HTMLPurifier/CSSDefinition.php">
-   <line>372</line>
+   <line>377</line>
   </file>
  </directive>
  <directive id="CSS.Trusted">
   <file name="HTMLPurifier/CSSDefinition.php">
-   <line>376</line>
+   <line>381</line>
   </file>
  </directive>
  <directive id="CSS.AllowImportant">
   <file name="HTMLPurifier/CSSDefinition.php">
-   <line>380</line>
+   <line>385</line>
   </file>
  </directive>
  <directive id="CSS.AllowedProperties">
   <file name="HTMLPurifier/CSSDefinition.php">
-   <line>509</line>
+   <line>514</line>
   </file>
  </directive>
  <directive id="CSS.ForbiddenProperties">
   <file name="HTMLPurifier/CSSDefinition.php">
-   <line>525</line>
+   <line>530</line>
   </file>
  </directive>
  <directive id="Cache.DefinitionImpl">
