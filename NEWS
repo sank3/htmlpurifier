@@ -9,6 +9,9 @@ NEWS ( CHANGELOG and HISTORY )                                     HTMLPurifier
     . Internal change
 ==========================
 
+4.20.1, released 2020-11-18
+! Allow all length units for Image style attribute including '%'.
+
 4.20.0, released 2020-10-21
 ! Allow word-break css property with values: normal|break-all|keep-all|break-word|initial|inherit;
 

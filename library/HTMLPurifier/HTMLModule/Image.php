@@ -28,8 +28,8 @@ class HTMLPurifier_HTMLModule_Image extends HTMLPurifier_HTMLModule
                 'alt*' => 'Text',
                 // According to the spec, it's Length, but percents can
                 // be abused, so we allow only Pixels.
-                'height' => 'Pixels#' . $max,
-                'width' => 'Pixels#' . $max,
+                'height' => 'Length',
+                'width' => 'Length',
                 'longdesc' => 'URI',
                 'src*' => new HTMLPurifier_AttrDef_URI(true), // embedded
             )

@@ -21,7 +21,7 @@ class HTMLPurifier_Config
      * HTML Purifier's version
      * @type string
      */
-    public $version = '4.20.0';
+    public $version = '4.20.1';
 
     /**
      * Whether or not to automatically finalize

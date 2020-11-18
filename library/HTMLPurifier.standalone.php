@@ -7,7 +7,7 @@
  * primary concern and you are using an opcode cache. PLEASE DO NOT EDIT THIS
  * FILE, changes will be overwritten the next time the script is run.
  *
- * @version 4.20.0
+ * @version 4.20.1
  *
  * @warning
  *      You must *not* include any other HTML Purifier files before this file,
@@ -39,7 +39,7 @@
  */
 
 /*
-    HTML Purifier 4.20.0 - Standards Compliant HTML Filtering
+    HTML Purifier 4.20.1 - Standards Compliant HTML Filtering
     Copyright (C) 2006-2008 Edward Z. Yang
 
     This library is free software; you can redistribute it and/or
@@ -78,12 +78,12 @@ class HTMLPurifier
      * Version of HTML Purifier.
      * @type string
      */
-    public $version = '4.20.0';
+    public $version = '4.20.1';
 
     /**
      * Constant with version of HTML Purifier.
      */
-    const VERSION = '4.20.0';
+    const VERSION = '4.20.1';
 
     /**
      * Global configuration object.
@@ -1825,7 +1825,7 @@ class HTMLPurifier_Config
      * HTML Purifier's version
      * @type string
      */
-    public $version = '4.20.0';
+    public $version = '4.20.1';
 
     /**
      * Whether or not to automatically finalize
@@ -16459,8 +16459,8 @@ class HTMLPurifier_HTMLModule_Image extends HTMLPurifier_HTMLModule
                 'alt*' => 'Text',
                 // According to the spec, it's Length, but percents can
                 // be abused, so we allow only Pixels.
-                'height' => 'Pixels#' . $max,
-                'width' => 'Pixels#' . $max,
+                'height' => 'Length',
+                'width' => 'Length',
                 'longdesc' => 'URI',
                 'src*' => new HTMLPurifier_AttrDef_URI(true), // embedded
             )
